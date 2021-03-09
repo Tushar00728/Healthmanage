@@ -1,10 +1,10 @@
 #Health Management System
 
-def getdate():
+def getdate(): #function for getting the date and time of logging
     import datetime
     return datetime.datetime.now()
 
-def log(k):
+def log(k):  #function for logging
     if k==1:
         t= int(input("Enter 1 for exercise and 2 for food"))
         if(t==1):
@@ -45,7 +45,7 @@ def log(k):
             print("Wrong input please re-enter")
 
 
-def retrieve(k):
+def retrieve(k): #function for retrieving the logs
     if k==1:
         c= int(input("Enter 1 for exercise and 2 for food"))
         if(c==1):
